@@ -8,7 +8,7 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    axios.get('http://127.0.0.1:8000/api/wind/analytics')
+    axios.get('https://x7k9-elexon-wind-backend.onrender.com/api/wind/analytics')
       .then(res => {
         setData(res.data);
         setLoading(false);
